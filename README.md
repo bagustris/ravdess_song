@@ -26,7 +26,7 @@ In this tutorial you will learn:
 3. How to split dataset into training and test  
 4. How to make speaker-independent partition  
 
-## Accucary result  
+## Accuracy result  
 *Speaker-independet:* 93.%  
 *Speaker-independet:* 74.%  
 
