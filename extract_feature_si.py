@@ -8,6 +8,7 @@ import os
 import librosa
 import numpy as np
 
+# grab all wav files
 data_path = 'archive'
 files = glob.glob(os.path.join(data_path + '/*/', '*.wav'))
 files.sort()

@@ -14,17 +14,14 @@ rn.seed(123)
 tf.random.set_seed(123)
 
 # load feature data
-X = np.load('data/x.npy')
-y = np.load('data/y.npy')
+X_train = np.load('data/x_train.npy')
+X_test = np.load('data/x_test.npy')
+y_train = np.load('data/y_train.npy')
+y_test = np.load('data/y_test.npy')
 
 # reshape x untuk lstm
-X = X.reshape((X.shape[0], 1, X.shape[1]))
-
-# if labels are not in integer, convert it, otherwise comment it
-y = y.astype(int)
-
-# split into train and test
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.1)
+X_train = X_train.reshape(X_train.shape[0], X_train.shape[1], 1)
+X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
 
 earlystop = tf.keras.callbacks.EarlyStopping(monitor='val_loss',
                                              patience=10,
@@ -37,10 +34,10 @@ checkpointer = tf.keras.callbacks.ModelCheckpoint(
 def model_lstm():
     model = tf.keras.models.Sequential()
     model.add(tf.keras.layers.BatchNormalization(axis=-1,
-              input_shape=(x_train.shape[1], x_train.shape[2])))
-    model.add(tf.keras.layers.LSTM(256, return_sequences=True))
-    model.add(tf.keras.layers.LSTM(256, return_sequences=True))
-    model.add(tf.keras.layers.LSTM(256, return_sequences=True))
+              input_shape=(X_train.shape[1], X_train.shape[2])))
+    model.add(tf.keras.layers.Conv1D(256, 128, 1, padding='same'))
+    model.add(tf.keras.layers.Activation('relu'))
+    model.add(tf.keras.layers.MaxPooling1D(2))
     model.add(tf.keras.layers.Flatten())
     model.add(tf.keras.layers.Dropout(0.4))
     model.add(tf.keras.layers.Dense(6, activation='softmax'))
@@ -57,14 +54,14 @@ model = model_lstm()
 print(model.summary())
 
 # train the model
-hist = model.fit(x_train, 
+hist = model.fit(X_train, 
                  y_train, 
                  epochs=100, 
                  shuffle=True,
-                #  callbacks=earlystop,
+                 callbacks=earlystop,
                  validation_split=0.1,
                  batch_size=16)
-evaluate = model.evaluate(x_test, y_test, batch_size=16)
+evaluate = model.evaluate(X_test, y_test, batch_size=16)
 print(evaluate)
 
 # make prediction for confusion_matrix
