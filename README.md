@@ -7,6 +7,11 @@ A simple tutorial/demonstration on deep learning application for emotion recogni
 Tensorflow:  2.5 and 2.6  
 Librosa: 8.1  
 
+## One Click
+There are two ways to simulate, either by clone this repo or run it on Google Colab.  
+For Google Colab, [click here](https://colab.research.google.com/github/bagustris/ravdess_song/blob/main/ravdess_song_sd.ipynb) (You must have a google account!).
+You can also clicks in .ipynb file above and open it colab.
+
 ## Dataset 
 The dataset is included in this repo. This is a part of RAVDESS [1] dataset with song data only.
 Since it has a license "CC BY-NC-SA 4.0", we can provide it here.
@@ -37,8 +42,9 @@ Life after this (based on problem you're facing):
 3. Try to other datasets
 
 ### If you encounter a problem, submit an [issue](https://github.com/bagustris/ravdess_song/issues)
+Please cite the last reference is you take a benefit of this repo.
 
-Reference:  
+## Reference:  
 [1] S. R. Livingstone and F. A. Russo, “The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS),” PLoS One, pp. 1–35, 2018, doi: 10.5281/zenodo.1188976.  
 [2] MLP: http://www.sainshack.com/2017/08/10/jaringan-syaraf-tiruan-dan-implementasinya-dalam-bahasa-r-1/  
 [3] LSTM: http://colah.github.io/posts/2015-08-Understanding-LSTMs/  
