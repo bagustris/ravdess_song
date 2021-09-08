@@ -39,7 +39,8 @@ Life after this (based on problem you're facing):
 ### If you encounter a problem, submit an [issue](https://github.com/bagustris/ravdess_song/issues)
 
 Reference:  
-[1] S. R. Livingstone and F. A. Russo, “The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS),” PLoS One, pp. 1–35, 2018, doi: 10.5281/zenodo.1188976.
-[2] MLP: http://www.sainshack.com/2017/08/10/jaringan-syaraf-tiruan-dan-implementasinya-dalam-bahasa-r-1/
-[3] LSTM: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
-[4] CNN: http://bagustris.blogspot.com/2018/08/deep-learning-cnn-konvolusi-dan-pooling.html
+[1] S. R. Livingstone and F. A. Russo, “The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS),” PLoS One, pp. 1–35, 2018, doi: 10.5281/zenodo.1188976.  
+[2] MLP: http://www.sainshack.com/2017/08/10/jaringan-syaraf-tiruan-dan-implementasinya-dalam-bahasa-r-1/  
+[3] LSTM: http://colah.github.io/posts/2015-08-Understanding-LSTMs/  
+[4] CNN: http://bagustris.blogspot.com/2018/08/deep-learning-cnn-konvolusi-dan-pooling.html  
+[5] B. T. Atmaja and M. Akagi, “On The Differences Between Song and Speech Emotion Recognition: Effect of Feature Sets, Feature Types, and Classifiers,” in 2020 IEEE REGION 10 CONFERENCE (TENCON), 2020, pp. 968–972.
