@@ -12,7 +12,7 @@ There are two ways to simulate, either by clone this repo or run it on Google Co
 For Google Colab, [click here](https://colab.research.google.com/github/bagustris/ravdess_song/blob/main/ravdess_song_sd.ipynb) (You must have a google account!).
 You can also clicks in .ipynb file above and open it colab.
 
-## Explanattion for Colab /Jupyter Files  (On progress)
+## Explanation for Colab /Jupyter Files  (On progress)
 - ravdess_song_sd_fc.ipynb:  
   This is the simplest impelementation. We extract aoustic features and fed it into fully-connected (FC) networks. The scenario is speaker-dependent (SD).
 - ravdess_song_sd_lstm.ipynb:  
