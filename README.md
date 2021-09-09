@@ -32,8 +32,8 @@ In this tutorial you will learn:
 4. How to make speaker-independent partition  
 
 ## Accuracy result  
-*Speaker-independet:* 93.%  
-*Speaker-independet:* 74.%  
+*Speaker-dependent:* 93.%  
+*Speaker-independent:* 74.%  
 
 ## Next
 Life after this (based on problem you're facing):    
