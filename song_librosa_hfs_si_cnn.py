@@ -19,7 +19,7 @@ X_test = np.load('data/x_test.npy')
 y_train = np.load('data/y_train.npy')
 y_test = np.load('data/y_test.npy')
 
-# reshape x untuk lstm
+# reshape x untuk cnn
 X_train = X_train.reshape(X_train.shape[0], X_train.shape[1], 1)
 X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
 
@@ -31,7 +31,7 @@ checkpointer = tf.keras.callbacks.ModelCheckpoint(
 
 
 # function to define model
-def model_lstm():
+def model_cnn():
     model = tf.keras.models.Sequential()
     model.add(tf.keras.layers.BatchNormalization(axis=-1,
               input_shape=(X_train.shape[1], X_train.shape[2])))
@@ -50,7 +50,7 @@ def model_lstm():
 
 
 # create the model
-model = model_lstm()
+model = model_cnn()
 print(model.summary())
 
 # train the model
@@ -61,8 +61,10 @@ hist = model.fit(X_train,
                  callbacks=earlystop,
                  validation_split=0.1,
                  batch_size=16)
+
+# evaluate the model on test partition
 evaluate = model.evaluate(X_test, y_test, batch_size=16)
-print(evaluate)
+print("Loss: ", evaluate[0], "--> Accuracy: ", evaluate[1])
 
 # make prediction for confusion_matrix
 # import os
