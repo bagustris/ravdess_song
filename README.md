@@ -9,7 +9,7 @@ Librosa: 8.1
 
 ## One Click
 There are two ways to simulate, either by clone this repo or run it on Google Colab.  
-For Google Colab, [click here](https://colab.research.google.com/github/bagustris/ravdess_song/blob/main/ravdess_song_sd.ipynb) (You must have a google account!).
+For Google Colab, [click here](https://colab.research.google.com/github/bagustris/ravdess_song/blob/main/ravdess_song_sd_fc.ipynb) (You must have a google account!).
 You can also clicks in .ipynb file above and open it colab.
 
 ## Explanation for Colab /Jupyter Files  (On progress)
