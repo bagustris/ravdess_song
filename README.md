@@ -14,13 +14,13 @@ You can also clicks in .ipynb file above and open it colab.
 
 ## Explanation for Colab /Jupyter Files  (On progress)
 - ravdess_song_sd_fc.ipynb:  
-  This is the simplest impelementation. We extract aoustic features and fed it into fully-connected (FC) networks. The scenario is speaker-dependent (SD).
+  This is the simplest implementation. We extract aoustic features and fed it into fully-connected (FC) networks. The scenario is speaker-dependent (SD).
 - ravdess_song_sd_lstm.ipynb:  
   This is the fastest implementation. If you want to have a fast insight just looking this code. The file reads acoustic feature extracted in `data` dir and feed it to LSTM neural networks. The scenario is speaker dependent.
 - ravdes_song_si_lstm.ipynb:  
   A more detail implementation by shoing feature extraction process. The model uses long shor-term memory (LSTM) networks.
 - ravdess_song_si_cnn.ipynb:  
-  Similar to the the previous file but it uses one-dimensional CNN (Conv1D) instead of LSTM
+  Similar to the the previous file but it uses one-dimensional CNN (Conv1D) instead of LSTM. Acoustic features are loaded from saved npf files.
 
 ## Dataset 
 The dataset is included in this repo. This is a part of RAVDESS [1] dataset with song data only.
