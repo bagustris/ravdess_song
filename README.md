@@ -5,10 +5,10 @@ A simple tutorial/demonstration on deep learning application for emotion recogni
 
 ## Tested on:  
 Tensorflow:  2.5 and 2.6  
-Librosa: 8.1  
+Librosa: 0.8.1  
 
 ## One Click
-There are two ways to simulate, either by clone this repo or run it on Google Colab.  
+There are two ways to simulate, either by clone this repo and run them locally or run them on the Google Colab.  
 For Google Colab, [click here](https://colab.research.google.com/github/bagustris/ravdess_song/blob/main/ravdess_song_sd_fc.ipynb) (You must have a google account!).
 You can also clicks in .ipynb file above and open it colab.
 
